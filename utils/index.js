@@ -44,6 +44,7 @@ async function deploySC(contractName, args = []) {
   var smartContract = await gcf(contractName);
   var proxyContract = await dp(smartContract, [...args], {
     kind: "uups",
+    timeout: 0,
   });
   if (process.env.HARDHAT_NETWORK) {
     var tx = await proxyContract.deployed();

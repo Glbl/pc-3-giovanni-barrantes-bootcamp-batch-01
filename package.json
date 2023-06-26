@@ -18,6 +18,8 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.3",
     "@openzeppelin/contracts-upgradeable": "^4.8.0",
+    "@pinata/sdk": "^2.1.0",
+    "daemon": "^1.1.0",
     "dotenv": "^16.0.3"
   }
 }
